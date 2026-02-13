@@ -1,5 +1,0 @@
-production:
-  branch: main
-  commitMessage: 'New comment on blog2'
-  path: 'comments/blog2'
-  moderation: true
