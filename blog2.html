@@ -59,7 +59,7 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
 
-    /* Like button styling */
+    /* Like & Dislike button styling */
     .like-section {
       display: flex;
       align-items: center;
@@ -68,18 +68,30 @@
       margin: 30px 0;
     }
 
-    .like-btn {
-      background-color: #ffce54;
+    .like-btn, .dislike-btn {
       border: none;
       padding: 10px 20px;
       font-size: 1.1em;
       border-radius: 6px;
       cursor: pointer;
       transition: background-color 0.3s;
+      color: white;
+    }
+
+    .like-btn {
+      background-color: #ffce54;
     }
 
     .like-btn:hover {
       background-color: #f0b90b;
+    }
+
+    .dislike-btn {
+      background-color: #e74c3c;
+    }
+
+    .dislike-btn:hover {
+      background-color: #c0392b;
     }
 
     /* Comment form styling */
@@ -198,36 +210,31 @@
     <blockquote>Because caste, dowry, money — all of that fades. The only thing that stays… is the person.</blockquote>
   </div>
 
-  <!-- Like Button -->
+  <!-- Like & Dislike Buttons -->
   <div class="like-section">
     <button class="like-btn" id="likeBtn">👍 Like</button>
-    <span id="likeCount">0</span> Likes
-  </div>
-
-  <!-- Staticman Comment Section -->
-  <div id="comments">
-    <h3>Comments</h3>
-    <ul id="comment-list">
-      <!-- Existing comments will appear here after merging PRs -->
-    </ul>
-
-    <form id="comment-form" method="POST" action="https://staticman3.herokuapp.com/v3/entry/github/mrunal0699/mrunal0699.github.io/main/comments/blog2">
-      <input type="text" name="fields[name]" placeholder="Your Name" required>
-      <input type="email" name="fields[email]" placeholder="Your Email (optional)">
-      <textarea name="fields[comment]" placeholder="Your Comment" rows="5" required></textarea>
-      <button type="submit">Submit Comment</button>
-    </form>
+    <span id="likeCount">0</span>
+    <button class="dislike-btn" id="dislikeBtn">👎 Dislike</button>
+    <span id="dislikeCount">0</span>
   </div>
 
   <script>
-    // Local Like Counter
-    let count = 0;
+    // Local Like & Dislike Counter
+    let likes = 0;
+    let dislikes = 0;
     const likeBtn = document.getElementById('likeBtn');
+    const dislikeBtn = document.getElementById('dislikeBtn');
     const likeCount = document.getElementById('likeCount');
+    const dislikeCount = document.getElementById('dislikeCount');
 
     likeBtn.addEventListener('click', () => {
-      count++;
-      likeCount.innerText = count;
+      likes++;
+      likeCount.innerText = likes;
+    });
+
+    dislikeBtn.addEventListener('click', () => {
+      dislikes++;
+      dislikeCount.innerText = dislikes;
     });
   </script>
 
