@@ -8,10 +8,6 @@ This space is where I write freely, reflect deeply, and express thoughts that ma
 1. [Can We Just Be Human First?](https://mrunal0699.github.io)  
 2. [Why Does Caste Still Decide Love?](https://mrunal0699.github.io/blog2.html)
 
-👀 **Read the Blogs Live**:  
-➡️ [Can We Just Be Human First?](https://mrunal0699.github.io)  
-➡️ [Why Does Caste Still Decide Love?](https://mrunal0699.github.io/blog2.html)
-
 ---
 
 ### ✨ About This Blog
