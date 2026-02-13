@@ -5,59 +5,84 @@
   <title>Why Does Caste Still Decide Love?</title>
   <style>
     body {
-      font-family: Georgia, serif;
-      max-width: 750px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.7;
-      background-color: #f9f9f9;
+      font-family: 'Georgia', serif;
+      max-width: 700px;
+      margin: 50px auto;
+      line-height: 1.8;
       color: #333;
+      padding: 0 20px;
+      background-color: #fafafa;
     }
 
     h1 {
       text-align: center;
       color: #2c3e50;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
+      font-size: 2.5em;
+      letter-spacing: 1px;
     }
 
     h2 {
       color: #34495e;
-      margin-top: 30px;
+      margin-top: 40px;
+      border-left: 6px solid #3498db;
+      padding-left: 12px;
+      font-size: 1.5em;
     }
 
     p {
-      margin-bottom: 20px;
+      margin-bottom: 22px;
+      font-size: 1.1em;
     }
 
     strong.question {
-      color: #e74c3c;
+      background-color: #fff3cd;
+      color: #856404;
+      padding: 2px 6px;
+      border-radius: 4px;
     }
 
-    hr {
-      margin: 40px 0;
-      border: none;
-      border-top: 2px solid #ddd;
+    blockquote {
+      background-color: #e9f7ef;
+      border-left: 6px solid #2ecc71;
+      margin: 25px 0;
+      padding: 15px 20px;
+      font-style: italic;
+      color: #2c3e50;
     }
 
-    #likeBtn {
-      background-color: #3498db;
-      color: white;
+    .section-card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px 25px;
+      margin: 25px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    /* Like button styling */
+    .like-section {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
+      margin: 30px 0;
+    }
+
+    .like-btn {
+      background-color: #ffce54;
       border: none;
-      padding: 8px 16px;
-      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 1.1em;
+      border-radius: 6px;
       cursor: pointer;
-      margin-bottom: 20px;
+      transition: background-color 0.3s;
     }
 
-    #likeBtn:hover {
-      background-color: #2980b9;
+    .like-btn:hover {
+      background-color: #f0b90b;
     }
 
-    #likeCount {
-      font-weight: bold;
-      margin-left: 10px;
-    }
-
+    /* Comment form styling */
     #comments {
       margin-top: 50px;
     }
@@ -94,6 +119,12 @@
     #comment-form button:hover {
       background-color: #1e8449;
     }
+
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 1.1em;
+    }
   </style>
 </head>
 <body>
@@ -101,61 +132,86 @@
   <h1>Why Does Caste Still Decide Love?</h1>
   <p><strong>Author: Mrunal Jadhav</strong></p>
 
-  <p>The other day, I was thinking about how far we’ve come as a society – technology, education, opportunities – and created technology that talks back to us. And then I remembered a conversation I once overheard about marriage.</p>
+  <div class="section-card">
+    <p>The other day, I was thinking about how far we’ve come as a society—technology, education, opportunities—and created technology that talks back to us. And then I remembered a conversation I once overheard about marriage.</p>
 
-  <p><strong class="question">The first question someone asked wasn’t, “What kind of person is he?” or “Does she treat people well?” It was — “What is the caste?”</strong></p>
+    <p><strong class="question">The first question someone asked wasn’t, “What kind of person is he?” or “Does she treat people well?” It was — “What is the caste?”</strong></p>
 
-  <p>In that moment, it didn’t matter how educated, kind, hardworking, or successful the person was. One label from generations ago had already decided their worth. I’m just here to wonder… why are we still like this?</p>
+    <p>And I don’t know why, but that hit me. Because in that moment, it didn’t matter how educated, kind, hardworking, or successful the person was. One label from generations ago had already decided their worth.</p>
+
+    <p>I’m not here to blame anyone. I’m just here to wonder… <strong class="question">why are we still like this?</strong></p>
+  </div>
 
   <h2>When Labels Outweigh Life</h2>
-  <p>We’ve all seen someone who has studied for years, built a career, earned respect, maybe even changed lives… still rejected for marriage because of their caste.</p>
+  <div class="section-card">
+    <p>We’ve all seen it—someone who has studied for years, built a career, earned respect, maybe even changed the lives of people around them… still getting rejected for marriage because of their caste.</p>
 
-  <p>I’ve seen a friend cry because after months of her parents praising her achievements, they told her she couldn’t marry the man she loved because he was “not from our community.” I’ve also heard of a guy rejected by multiple families despite having a stable job, a good heart, and a clean record just because of his last name.</p>
+    <p>I’ve seen a friend cry because after months of her parents praising her achievements, they turned around and told her she couldn’t marry the man she loved because he was “not from our community.”</p>
 
-  <p><strong class="question">It’s almost as if we’ve decided that no matter what a person does in life, they can’t rise above the tag their ancestors carried.</strong></p>
+    <p>I’ve also heard about a guy who was rejected by multiple families despite having a stable job, a good heart, and a clean record—all because his last name didn’t match the “right” category.</p>
+
+    <blockquote>It’s almost as if we’ve decided that no matter what a person does in their life, they can’t rise above the tag their ancestors carried.</blockquote>
+  </div>
 
   <h2>Dowry – the tradition we pretend to hate</h2>
-  <p>And it’s not just caste. Dowry is still there quietly existing behind the “we don’t believe in it” mask.</p>
+  <div class="section-card">
+    <p>And it’s not just caste. Dowry is still there too, quietly existing behind the “we don’t believe in it” mask.</p>
 
-  <p>I once attended a wedding where both families proudly said, “We don’t take dowry.” But then expensive gifts, gold sets, and cash envelopes were exchanged in the name of “customs.” Everyone smiled, but deep down, everyone knew what it really was.</p>
+    <p>I once attended a wedding where both families proudly said, “We don’t take dowry.” But then I watched as expensive gifts, gold sets, and cash envelopes were exchanged in the name of “customs.” Everyone smiled, but deep down, everyone knew what it really was.</p>
 
-  <p><strong class="question">When a dowry-related tragedy happens, people become vocal, but when life goes back to normal, the same practice continues in so many homes.</strong></p>
+    <p>When a dowry-related tragedy happens, people become vocal, news channels run endless debates, and social media fills up with hashtags. But when life goes back to normal, the same practice continues in so many homes.</p>
+
+    <p>And yes, dowry is wrong. But so is using things like alimony unfairly. Every coin has two sides — but we only like to see the side that suits us.</p>
+  </div>
 
   <h2>The Real Meaning of Caste</h2>
-  <p>If you look at history, caste wasn’t originally about superiority. It was about work – who farms, who teaches, who makes tools, who heals. It’s like today’s professions: engineers, doctors, artists, teachers. But somewhere along the way, we stopped updating that system.</p>
+  <div class="section-card">
+    <p>If you look at history, caste wasn’t originally about superiority. It was about work—who farms, who teaches, who makes tools, who heals.</p>
 
-  <p><strong class="question">If we really want to talk about caste, maybe we should base it on what people do today, not what someone in their family did 300 years ago.</strong></p>
+    <p>It’s like today’s professions: engineers, doctors, artists, teachers. But somewhere along the way, we stopped updating that system.</p>
+
+    <p><strong class="question">If we really want to talk about caste, maybe we should base it on what people do today, not what someone in their family did 300 years ago.</strong></p>
+  </div>
 
   <h2>The Reality Check</h2>
-  <p>I’ve met higher-caste families who are poor, uneducated, and sometimes even lack basic manners. And I’ve met lower-caste families who are educated, wealthy, humble, and full of kindness. Once I was helped by a stranger during a difficult situation; later I found out he belonged to a caste society looks down on. Yet, in that moment, his humanity mattered far more than any label.</p>
+  <div class="section-card">
+    <p>I’ve met higher-caste families who are poor, uneducated, and sometimes even lack basic manners. I’ve met lower-caste families who are educated, wealthy, humble, and full of kindness. I still remember once being helped by a stranger during a difficult situation—later I found out he belonged to a caste that society looks down on. And yet, in that moment, his humanity mattered far more than any label.</p>
+
+    <p><strong class="question">So clearly, caste tells you nothing about a person’s values or their worth.</strong></p>
+  </div>
 
   <h2>The Silent Pressure</h2>
-  <p>One thing that makes this harder is the quiet pressure from relatives, neighbors, the “community.” Even if someone wants to marry outside their caste, they hear lines like: “Family honour,” “what will people say,” “this is not how we do things.”</p>
+  <div class="section-card">
+    <p>One thing that makes this harder is the quiet pressure from relatives, neighbors, the “community.” Even if someone wants to marry outside their caste, they hear the same lines: <strong class="question">“Family honour,” “What will people say,” “This is not how we do things.”</strong></p>
 
-  <p><strong class="question">I’ve seen people choose family approval over personal happiness just to avoid judgment. And yet, when life gets hard, these same “people” are nowhere to be found.</strong></p>
+    <p>I’ve seen people choose family approval over personal happiness just to avoid judgment. And yet, when life gets hard, these same “people” we try so hard to please… are nowhere to be found.</p>
+  </div>
 
   <h2>What If We Just Saw Humans?</h2>
-  <p>It’s not difficult to know a person’s worth — it’s in how they speak, how they treat others, how they handle challenges. But maybe looking at caste or money is easier. It saves us from the effort of knowing someone.</p>
+  <div class="section-card">
+    <p>It’s not that difficult to know a person’s worth—it’s in how they speak, how they treat others, how they handle challenges.</p>
 
-  <p><strong class="question">Still, I can’t help but hope that someday, the first question on a marriage checklist won’t be “What is the caste?” but “How is this person as a human?”</strong></p>
+    <p>But maybe looking at caste or money is easier. It saves us from the effort of knowing someone.</p>
 
-  <h2>A Small Hope</h2>
-  <p>Because caste, dowry, money — all of that fades. The only thing that stays… is the person.</p>
+    <p>Still, I can’t help but hope that someday, the first question on a marriage checklist won’t be <strong class="question">“What is the caste?”</strong> but <strong class="question">“How is this person as a human?”</strong></p>
 
-  <hr>
+    <blockquote>Because caste, dowry, money — all of that fades. The only thing that stays… is the person.</blockquote>
+  </div>
 
-  <!-- Like button -->
-  <button id="likeBtn">👍 Like</button>
-  <span id="likeCount">0</span> likes
+  <!-- Like Button -->
+  <div class="like-section">
+    <button class="like-btn" id="likeBtn">👍 Like</button>
+    <span id="likeCount">0</span> Likes
+  </div>
 
-  <!-- Comment section -->
+  <!-- Staticman Comment Section -->
   <div id="comments">
     <h3>Comments</h3>
     <ul id="comment-list">
-      <!-- Comments will appear here after merging PRs -->
+      <!-- Existing comments will appear here after merging PRs -->
     </ul>
 
-    <form id="comment-form" method="POST" action="https://staticman3.herokuapp.com/v3/entry/github/mrunal0699/mrunal0699.github.io/main/comments">
+    <form id="comment-form" method="POST" action="https://staticman3.herokuapp.com/v3/entry/github/mrunal0699/mrunal0699.github.io/main/comments/blog2">
       <input type="text" name="fields[name]" placeholder="Your Name" required>
       <input type="email" name="fields[email]" placeholder="Your Email (optional)">
       <textarea name="fields[comment]" placeholder="Your Comment" rows="5" required></textarea>
@@ -164,7 +220,7 @@
   </div>
 
   <script>
-    // Like button functionality
+    // Local Like Counter
     let count = 0;
     const likeBtn = document.getElementById('likeBtn');
     const likeCount = document.getElementById('likeCount');
@@ -175,5 +231,6 @@
     });
   </script>
 
+  <p class="footer">📖 Thank you for reading! Feel free to share your thoughts or connect with me 🌱</p>
 </body>
 </html>
