@@ -59,77 +59,34 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
 
-    /* Like & Dislike button styling */
-    .like-section {
+    /* Emoji Reactions */
+    .reaction-section {
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      gap: 10px;
+      gap: 15px;
       margin: 30px 0;
+      flex-wrap: wrap;
     }
 
-    .like-btn, .dislike-btn {
+    .reaction-btn {
+      background-color: #f0f0f0;
       border: none;
-      padding: 10px 20px;
-      font-size: 1.1em;
+      padding: 8px 15px;
+      font-size: 1.3em;
       border-radius: 6px;
       cursor: pointer;
       transition: background-color 0.3s;
-      color: white;
     }
 
-    .like-btn {
-      background-color: #ffce54;
+    .reaction-btn:hover {
+      background-color: #dcdcdc;
     }
 
-    .like-btn:hover {
-      background-color: #f0b90b;
-    }
-
-    .dislike-btn {
-      background-color: #e74c3c;
-    }
-
-    .dislike-btn:hover {
-      background-color: #c0392b;
-    }
-
-    /* Comment form styling */
-    #comments {
-      margin-top: 50px;
-    }
-
-    #comment-list li {
-      background: #f7f7f7;
-      padding: 15px;
-      margin-bottom: 15px;
-      border-radius: 8px;
-    }
-
-    #comment-list li strong {
-      color: #3498db;
-    }
-
-    #comment-form input, #comment-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      font-family: inherit;
-    }
-
-    #comment-form button {
-      background-color: #27ae60;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    #comment-form button:hover {
-      background-color: #1e8449;
+    .reaction-count {
+      margin-left: 5px;
+      font-weight: bold;
+      font-size: 1em;
     }
 
     .footer {
@@ -137,6 +94,7 @@
       margin-top: 50px;
       font-size: 1.1em;
     }
+
   </style>
 </head>
 <body>
@@ -210,31 +168,30 @@
     <blockquote>Because caste, dowry, money — all of that fades. The only thing that stays… is the person.</blockquote>
   </div>
 
-  <!-- Like & Dislike Buttons -->
-  <div class="like-section">
-    <button class="like-btn" id="likeBtn">👍 Like</button>
-    <span id="likeCount">0</span>
-    <button class="dislike-btn" id="dislikeBtn">👎 Dislike</button>
-    <span id="dislikeCount">0</span>
+  <!-- Emoji Feedback 🌟 -->
+  <h2>Emoji Feedback 🌟</h2>
+  <div class="reaction-section">
+    <button class="reaction-btn" data-emoji="👍">👍 <span class="reaction-count" id="count-like">0</span></button>
+    <button class="reaction-btn" data-emoji="❤️">❤️ <span class="reaction-count" id="count-love">0</span></button>
+    <button class="reaction-btn" data-emoji="😮">😮 <span class="reaction-count" id="count-wow">0</span></button>
+    <button class="reaction-btn" data-emoji="😢">😢 <span class="reaction-count" id="count-sad">0</span></button>
+    <button class="reaction-btn" data-emoji="💯">💯 <span class="reaction-count" id="count-100">0</span></button>
   </div>
 
   <script>
-    // Local Like & Dislike Counter
-    let likes = 0;
-    let dislikes = 0;
-    const likeBtn = document.getElementById('likeBtn');
-    const dislikeBtn = document.getElementById('dislikeBtn');
-    const likeCount = document.getElementById('likeCount');
-    const dislikeCount = document.getElementById('dislikeCount');
-
-    likeBtn.addEventListener('click', () => {
-      likes++;
-      likeCount.innerText = likes;
-    });
-
-    dislikeBtn.addEventListener('click', () => {
-      dislikes++;
-      dislikeCount.innerText = dislikes;
+    // Local Emoji Counters
+    const counters = { like: 0, love: 0, wow: 0, sad: 0, hundred: 0 };
+    document.querySelectorAll('.reaction-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const emoji = btn.dataset.emoji;
+        switch(emoji){
+          case '👍': counters.like++; document.getElementById('count-like').innerText = counters.like; break;
+          case '❤️': counters.love++; document.getElementById('count-love').innerText = counters.love; break;
+          case '😮': counters.wow++; document.getElementById('count-wow').innerText = counters.wow; break;
+          case '😢': counters.sad++; document.getElementById('count-sad').innerText = counters.sad; break;
+          case '💯': counters.hundred++; document.getElementById('count-100').innerText = counters.hundred; break;
+        }
+      });
     });
   </script>
 
