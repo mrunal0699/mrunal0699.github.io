@@ -4,11 +4,13 @@ Welcome to my personal blog!
 
 This space is where I write freely, reflect deeply, and express thoughts that matter — especially around humanity, equality, empathy, and personal experiences. My goal is to spark open conversations and offer perspectives that encourage understanding, not judgment.
 
-💬 **Latest Post**:  
-[Can We Just Be Human First?](https://mrunal0699.github.io)
+💬 **Latest Posts**:  
+1. [Can We Just Be Human First?](https://mrunal0699.github.io)  
+2. [Why Does Caste Still Decide Love?](https://mrunal0699.github.io/blog2.html)
 
-👀 **Read the Blog Live**:  
-➡️ https://mrunal0699.github.io
+👀 **Read the Blogs Live**:  
+➡️ [Can We Just Be Human First?](https://mrunal0699.github.io)  
+➡️ [Why Does Caste Still Decide Love?](https://mrunal0699.github.io/blog2.html)
 
 ---
 
