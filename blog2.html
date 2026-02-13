@@ -4,14 +4,13 @@
   <meta charset="UTF-8">
   <title>Why Does Caste Still Decide Love?</title>
   <style>
-    /* Page Styling */
     body {
       font-family: 'Georgia', serif;
-      max-width: 900px;
+      max-width: 700px;
       margin: 50px auto;
       line-height: 1.8;
       color: #333;
-      padding: 0 25px;
+      padding: 0 20px;
       background-color: #fafafa;
     }
 
@@ -19,7 +18,7 @@
       text-align: center;
       color: #2c3e50;
       margin-bottom: 50px;
-      font-size: 2.8em;
+      font-size: 2.5em;
       letter-spacing: 1px;
     }
 
@@ -28,12 +27,12 @@
       margin-top: 40px;
       border-left: 6px solid #3498db;
       padding-left: 12px;
-      font-size: 1.6em;
+      font-size: 1.5em;
     }
 
     p {
       margin-bottom: 22px;
-      font-size: 1.15em;
+      font-size: 1.1em;
     }
 
     strong.question {
@@ -72,7 +71,6 @@
       margin: 50px 0;
     }
 
-    /* Special section card for paragraphs */
     .section-card {
       background-color: #ffffff;
       border-radius: 10px;
@@ -81,7 +79,29 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
 
-    /* Center footer */
+    /* Like button styling */
+    .like-section {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
+      margin: 30px 0;
+    }
+
+    .like-btn {
+      background-color: #ffce54;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1.1em;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .like-btn:hover {
+      background-color: #f0b90b;
+    }
+
     .footer {
       text-align: center;
       margin-top: 50px;
@@ -160,7 +180,35 @@
     <blockquote>Because caste, dowry, money — all of that fades. The only thing that stays… is the person.</blockquote>
   </div>
 
+  <!-- Like Button -->
+  <div class="like-section">
+    <button class="like-btn" id="likeBtn">👍 Like</button>
+    <span id="likeCount">0</span> Likes
+  </div>
+
+  <script>
+    // Local Like Counter
+    let count = 0;
+    const likeBtn = document.getElementById('likeBtn');
+    const likeCount = document.getElementById('likeCount');
+
+    likeBtn.addEventListener('click', () => {
+      count++;
+      likeCount.innerText = count;
+    });
+  </script>
+
   <hr>
+
+  <!-- Utterances Comments Box -->
+  <script src="https://utteranc.es/client.js"
+          repo="mrunal0699/mrunal0699.github.io"
+          issue-term="pathname"
+          theme="github-light"
+          crossorigin="anonymous"
+          async>
+  </script>
+
   <p class="footer">📖 Thank you for reading! Feel free to share your thoughts or connect with me 🌱</p>
 </body>
 </html>
